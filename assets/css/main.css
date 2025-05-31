@@ -1,11 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 @import url("fontawesome-all.min.css");
 
-/*
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -71,6 +67,12 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+
+div#myPhoto {
+
+	height: 100%;
+}
+
 
 /* Basic */
 
@@ -227,6 +229,7 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: calc(100% - 50px);
 		width: 1200px;
+	
 	}
 
 		.container.medium {
@@ -1332,6 +1335,7 @@ input, select, textarea {
 				flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
+				padding-top: 20px;
 			}
 
 				.row > * {
@@ -1700,6 +1704,8 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			width: 100%;
+			height: 100%;
+			margin: 100px;
 		}
 
 		.image.featured {
@@ -2109,7 +2115,7 @@ input, select, textarea {
 		width: 100%;
 		z-index: 10000;
 		cursor: default;
-		height: 3.5em;
+		height: 4.5em;
 		line-height: 3.5em;
 	}
 
@@ -2183,6 +2189,7 @@ input, select, textarea {
 
 			#top .image img {
 				border-radius: 100%;
+
 			}
 
 		#top h1 {
@@ -2627,4 +2634,24 @@ h1 {
 
 ul.social {
 	margin: 60px;
+}
+
+#myPhoto img {
+
+	position: relative;
+	z-index: 1;
+	max-width: 100%;
+  	height: auto;
+}
+
+
+div#myPhoto.col-4.col-5-large.col-12-medium {
+	height: auto;
+	
+}
+
+header {
+	margin-top: 75px;
+	position: relative;
+	z-index: 2;
 }
